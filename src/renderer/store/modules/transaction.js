@@ -271,7 +271,7 @@ export default {
     async updateStaticFees ({ commit, rootGetters }) {
       let staticFees = {}
       const feesResponse = await this._vm.$client.fetchStaticFees()
-      if (feesResponse.transfer) {
+      if (feesResponse && feesResponse.transfer) {
         staticFees = Object.values(feesResponse)
       } else {
         for (const group of Object.values(TRANSACTION_GROUPS)) {
