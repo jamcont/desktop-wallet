@@ -18,7 +18,7 @@ exports.PEERS = {
 }
 
 exports.ANNOUNCEMENTS = {
-  rssUrl: 'https://blog.bancoin.io/feed'
+  rssUrl: 'https://blog.bancoin.io/feedi'
 }
 
 exports.VENDOR_FIELD = {
