@@ -3,7 +3,7 @@ const os = require('os')
 const path = require('path')
 
 exports.APP = {
-  website: 'https://ark.io',
+  website: 'https://bancoin.io',
   transactionExpiryMinutes: 45
 }
 
@@ -14,11 +14,11 @@ exports.NETWORKS = [
 
 exports.PEERS = {
   'ark.mainnet': require('./peers/mainnet.json'),
-  'ark.devnet': require('./peers/devnet.json')
+  'bancoin.devnet': require('./peers/devnet.json')
 }
 
 exports.ANNOUNCEMENTS = {
-  rssUrl: 'https://blog.ark.io/feed'
+  rssUrl: 'https://blog.bancoin.io/feed'
 }
 
 exports.VENDOR_FIELD = {

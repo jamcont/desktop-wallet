@@ -298,7 +298,7 @@ export default {
 
       const networkLookup = {
         'ark.mainnet': 'mainnet',
-        'ark.devnet': 'devnet'
+        'bancoin.devnet': 'devnet'
       }
 
       if (networkLookup[network.id]) {

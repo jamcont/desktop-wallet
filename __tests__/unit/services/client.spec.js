@@ -30,13 +30,13 @@ jest.mock('@/store', () => ({
     'session/network': {},
     'network/byId': (id) => {
       let version = 23
-      if (id === 'ark.devnet') {
+      if (id === 'bancoin.devnet') {
         version = 30
       }
 
       return {
         constants: {
-          epoch: '2017-03-21T13:00:00.000Z'
+          epoch: '2020-04-29T23:02:28.540Z'
         },
         version
       }
@@ -1119,7 +1119,7 @@ describe('Services > Client', () => {
     describe('when a custom network is specified', () => {
       it('should have the correct version', async () => {
         setAip11AndSpy(false, false)
-        const networkId = 'ark.devnet'
+        const networkId = 'bancoin.devnet'
         const transaction = await client.buildTransfer({ fee: new BigNumber(fees[1][0]), networkId, passphrase: 'test' }, false, true)
         expect(transaction.data.network).toBe(30)
       })
